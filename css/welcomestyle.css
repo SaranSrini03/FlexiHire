@@ -4,7 +4,7 @@
     --skyblue:#8FC1E3;
     --normalblue:#1AA7EC;
     --purple:#7738a0;
- 
+    --black:var(--black)
  
  }
 *{
@@ -15,7 +15,7 @@
 }
 .header{
     display: flex;
-    padding: 1.5rem;
+    padding: .5rem;
     /* background-color: #cccccc; */
     width: 100%;
     height: 8%;
@@ -55,13 +55,13 @@
     font-size: 1rem;
     background-color:var(--skyblue) ;
     color: #526f83;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 50px 50px 0px;
     border: none;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
 }
 .header > a{
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
     padding: 1rem;
@@ -73,8 +73,8 @@
     width: 15rem;
     height: 4rem;
     margin-top: .5rem;
-    margin-left : 1.5rem;
-    font-size: 2rem;
+    margin-left : 8rem;
+    font-size: 1.5rem;
     background-color:#82b0cf ;
     color: #526f83;
     border-radius: 50px;
@@ -84,6 +84,26 @@
 }
 .header > .login:hover{
     color: black;
+}
+.exploreSpace{
+    padding : .5rem ;
+    font-size: 1.5rem;
+    margin: 0.1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+
+}
+.exploreSpace > a{
+    padding-bottom: 0.5rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--black);
+}
+.exploreSpace > a:hover{
+    border-bottom:.2rem solid var(--blue) ;
+}
+.main{
+    margin-top: 5rem;
 }
 .main > h1{
     width: auto;
@@ -97,18 +117,19 @@
     width: auto;
     margin-top: -7rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
 }
 .main > button{
     width: 15rem;
-    height: 6rem;
-    margin-left: 55rem;
+    height: 5rem;
+    /* margin-left: 50rem; */
     margin-top: 1rem;
     border-radius: 50px;
     border: none;
     font-size: 1.5rem;
     background-color: #8FC1E3;
+    cursor: pointer;
 }
 .footer > h1{
     text-align: center;
