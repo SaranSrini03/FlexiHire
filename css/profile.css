@@ -1,0 +1,189 @@
+:root{
+    --blue:#8fc1e3;
+    --skyblue:#4ADEDE;
+    --normalblue:#1AA7EC;
+    --purple:#7738a0;
+ 
+ 
+ }
+ *{
+     margin: 0px;
+     padding:0px;
+     box-sizing: border-box  ;
+ }
+ body{
+     font-family: 'Josefin Sans', sans-serif;
+     background-color: #ffffff;
+ }
+ .header{
+     display: flex;
+     padding: 1.5rem;
+     background-color: white;
+     width: 100%;
+     height: 8%;
+     /* border-bottom: .2rem solid   var(--blue); */
+ 
+ }
+ .header > h1{
+     height: 5rem;
+     width: 10rem;
+     text-align: center;
+     padding: 10px;
+     font-size: 50px;
+     color: black;
+     letter-spacing: -5px;
+ 
+ }
+ .header > .searchbar{
+     margin-left: 3rem;
+     margin-top: .5rem;
+     width: 70rem;
+     height: 4rem;
+     border: none;
+     outline: none;
+     padding: 1.5rem;
+     font-size: 30px;
+     background-color: var(--normalblue);
+     border-radius: 50px 0px 0px 50px;
+ }
+ .header > .searchbar:active{
+     outline:1px solid black;
+ }
+ .header > button{
+     width: 5rem;
+     margin-top: .5rem;
+     margin-right: .5rem;
+     height: 4rem;
+     font-size: 1.5rem;
+     background-color: var(--normalblue);
+     color: black;
+     border-radius: 0px 20px 20px 0px;
+     border: none;
+     cursor: pointer;
+ }
+.header > button:hover{
+     background-color: #5a5a5a;
+}
+.header > .dash{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 12rem;
+}
+.header > .profile{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    border-left: 3px solid black;
+    padding: 15px;
+    padding-right: 2px;
+    transition: 0.6s;
+}
+.header > a:hover{
+    color: rgb(57, 57, 57);
+}
+.text1{
+    font-size: 50px;
+    padding: 40px;
+    margin-left: 800px;
+}
+.container{
+    width: 100rem;
+    height: 35rem;
+    background-color: #868383;
+    border-radius: 30px;
+    margin-left: 250px;
+
+}
+.container > .leftside{
+    width: 30rem;
+    height: 35rem;
+    /* background-color: red; */
+    float: left;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+}
+.container > .leftside > .profile{
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 100%;
+}
+.container > .leftside > .name{
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 120px;
+}
+.container > .leftside > .star{
+    margin-top: 10px;
+}
+.container > .leftside > .rating,.location,.time{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.container > .rightside{
+    width: 70rem;
+    height: 35rem;
+    /* background-color: green; */
+    float: right;
+    border-radius: 0px 20px 20px 0px;
+}
+.container > .rightside > .profits,.taken,.about,.skill,.portfolio{
+    font-size: 25px;
+    margin: 50px;
+}
+.bottom{
+    width: 100rem;
+    height: 35rem;
+    /* background-color: red; */
+    border-radius: 30px;
+    margin: 50px;
+    margin-left: 250px;
+    margin-top: 50px;
+    padding: 10px;
+}
+.bottom > .left{
+    width: 45rem;
+    height: 35rem;
+    background-color: #868383;
+    float: left;
+    text-align: center;
+    margin-right:140px ;
+    border-radius: 50px;
+    padding: 60px;
+}
+.bottom > .left > .box{
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    margin: 20px;
+    margin-left: 130px;
+}
+
+.bottom > .right{
+    width: 45rem;
+    height: 35rem;
+    background-color: #868383;
+    float: left;
+    border-radius: 50px;
+    padding: 60px;  
+}
+.footer{
+    width: 100rem;
+    height:20rem;
+    background-color: #868383;
+    margin-left: 250px;
+    border-radius: 30px;
+    margin-bottom: 20rem;
+
+}
+
