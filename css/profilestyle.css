@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --blue:#1E2F97;
+    --skyblue:#8fc1e3;
+    --normalblue:#1AA7EC;
+    --purple:#7738a0;
+
+}
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    /* background-color: red; */
+    display: flex;
+    padding: 1.5rem;
+    background-color: white;
+    width: 100%;
+
+}
+.header > h1{
+    height: 5rem;
+    width: 10rem;
+    text-align: center;
+    /* padding: 1px; */
+    font-size: 50px;
+    color: rgb(73, 73, 73);
+    letter-spacing: -5px;
+
+}
+.header > .searchbar{
+    margin-left: 3rem;
+    margin-top: .5rem;
+    width: 40rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    padding: 1.5rem;
+    font-size: 30px;
+    background-color: var(--skyblue);
+    border-radius: 50px 0px 0px 50px;
+}
+.header > .searchbar:active{
+    outline:1px solid black;
+}
+.header > button{
+    width: 3rem;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    height: 3rem;
+    font-size: 15px;
+    background-color: var(--skyblue);
+    color: black;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+.header > button:hover{
+    background-color: #5a5a5a;
+}
+
+.header > .rightbox > .dashboard{
+    height: 5rem;
+    width: 10rem;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+.header > .rightbox > .prof{
+    height: 5rem;
+    width: 10rem;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+
+}
