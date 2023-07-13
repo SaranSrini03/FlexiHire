@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Freelancer Profile</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <img src="path/to/profile-picture.jpg" alt="Profile Picture">
+    <h1 id="name">sudhashu pandit</h1>
+    <h2 id="title">Experienced Web Developer</h2>
+    <hr>
+    <h3>Overview</h3>
+    <p id="overview">
+      I am an experienced web developer specializing in front-end development and responsive design. With a strong focus on user experience, I create visually appealing and intuitive websites that engage visitors.
+    </p>
+    <hr>
+    <h3>Skills and Expertise</h3>
+    <ul id="skills">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>Responsive Design</li>
+      <li>Bootstrap</li>
+      <li>UI/UX Design</li>
+    </ul>
+    <hr>
+    <h3>Experience</h3>
+    <ul id="experience">
+      <li>ABC Web Agency - Web Developer (2018-2021)</li>
+      <li>XYZ Startup - Front-end Developer (2016-2018)</li>
+    </ul>
+    <hr>
+    <h3>Portfolio</h3>
+    <div class="portfolio" id="portfolio">
+      
+    </div>
+    <hr>
+    <h3>Testimonials</h3>
+    <ul id="testimonials">
+      <li>"sudhanshu's attention to detail and ability to deliver high-quality code on time is exceptional. Highly recommended!" - Client A</li>
+      <li>"Working with sudhanshu was a pleasure. He understood our requirements perfectly and delivered a fantastic website." - Client B</li>
+    </ul>
+    <hr>
+    <h3>Contact</h3>
+    <div id="contact">
+      <p>Email: <span id="email">sce22cs059@sairamtap.edu.in</span></p>
+      <p>Phone: <span id="phone">+91 6351076354</span></p>
+      <p>Website: <span id="website">www.sudhanshu.com</span></p>
+      <button onclick="editProfile()">Edit</button>
+    </div>
+  </div>
+
+  <script>
+    function editProfile() {
+     
+      document.getElementById("name").contentEditable = true;
+      document.getElementById("title").contentEditable = true;
+      document.getElementById("overview").contentEditable = true;
+      enableListItems("skills");
+      enableListItems("experience");
+
+      
+      var button = document.querySelector("button");
+      button.textContent = "Save";
+      button.onclick = saveProfile;
+    }
+
+    function saveProfile() {
+      
+      document.getElementById("name").contentEditable = false;
+      document.getElementById("title").contentEditable = false;
+      document.getElementById("overview").contentEditable = false;
+      disableListItems("skills");
+      disableListItems("experience");
+
+      
+      var button = document.querySelector("button");
+      button.textContent = "Edit";
+      button.onclick = editProfile;
+
+     
+      var updatedName = document.getElementById("name").textContent;
+      var updatedTitle = document.getElementById("title").textContent;
+      var updatedOverview = document.getElementById("overview").textContent;
+      var updatedSkills = getListItems("skills");
+      var updatedExperience = getListItems("experience");
+
+     
+    }
+
+    function enableListItems(id) {
+      var list = document.getElementById(id).getElementsByTagName("li");
+      for (var i = 0; i < list.length; i++) {
+        list[i].contentEditable = true;
+      }
+    }
+
+    function disableListItems(id) {
+      var list = document.getElementById(id).getElementsByTagName("li");
+      for (var i = 0; i < list.length; i++) {
+        list[i].contentEditable = false;
+      }
+    }
+
+    function getListItems(id) {
+      var list = document.getElementById(id).getElementsByTagName("li");
+      var items = [];
+      for (var i = 0; i < list.length; i++) {
+        items.push(list[i].textContent);
+      }
+      return items;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<form action="save_profile.php" method="POST">
+  <!-- Add input fields for each profile field -->
+  <input type="text" name="name" value="John Doe">
+  <input type="text" name="title" value="Experienced Web Developer">
+  <textarea name="overview">I am an experienced web developer specializing in front-end development and responsive design.</textarea>
+  <!-- Add input fields for skills and experience lists -->
+  <input type="text" name="skills[]" value="HTML5">
+  <input type="text" name="skills[]" value="CSS3">
+  <input type="text" name="skills[]" value="JavaScript">
+  <!-- Repeat for other skills -->
+  <input type="text" name="experience[]" value="ABC Web Agency - Web Developer (2018-2021)">
+  <input type="text" name="experience[]" value="XYZ Startup - Front-end Developer (2016-2018)">
+  <!-- Repeat for other experiences -->
+  <button type="submit">Save</button>
+</form>
